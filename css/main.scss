@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap');
 
 :root{
-    --primary-color: #a17f1a;
+    --primary-color: #a6917c;
 }
 
 body{
@@ -23,7 +23,7 @@ body{
         color: black;
 
         span{
-            color: var(--primary-color);
+            color: #87728c;
         }
     }
 
@@ -70,7 +70,7 @@ section{
 
     h1{
         font-size: 2.8em;
-        line-height: 1em;
+        line-height: 1.1em;
         margin-top: .2em;
     }
     
