@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap');
+
+:root{
+    --primary-color: #a17f1a;
+}
+
+body{
+    background: #f2f2f2;
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+
+.navbar{
+    background: white;
+    padding: 1em;
+
+    
+    .logo{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.2em;
+        color: black;
+
+        span{
+            color: var(--primary-color);
+        }
+    }
+
+    nav{
+        display: none;
+    }
+    
+    .container{
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu{
+        cursor: pointer;
+    }
+}
+
+a {
+    color: #444444;
+}
+
+ul{
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+.hero{
+    text-align: center;
+}
+
+.left-col{
+    .subhead{
+        text-transform: uppercase;
+        color: grey;
+        font-weight: 700;
+        letter-spacing: .1em;
+        font-size: 1.1em;
+    }
+
+    h1{
+        font-size: 2.8em;
+        line-height: .5em;
+        margin-top: .2em;
+    }
+    
+    h2{
+        font-size: 1.3em;
+        letter-spacing: .06em;
+        line-height: 1.3em;
+        margin-top: -.6em;
+    }
+
+    .primary-cta{
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        padding: .6em 1.3em;
+        font-size: 1.2em;
+        font-weight: 700;
+        border-radius: 5em;
+        display: inline-block;
+    }
+}
+
+.hero-img{
+    width: 70%;
+    margin-top: 1.5em;
+    border-radius: 100%;//für rundes bild quadrat
+    border-color: var(--primary-color); //Rahmen rund herum
+}
+
+section.leistungen-section{
+    background: #20272E;
+    color: white;
+    padding: 3em 2em;
+
+    h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
+    
+    }
+}
+
+ul.leistungen{
+    margin: 0;
+    padding-left: 1em;
+    //display: grid; evtl später anwenden
+
+    li{
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+}
+
+.leistungen-section img{
+    display: none;
+}
+
+section.about{
+    background: var(--primary-color);
+    padding: 3em 2em;
+    text-align: center;
+    font-size: 1.1em;
+
+    h2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+        }
+    p{
+        margin-top: 0%;
+    }
+}
+
+section.contact{
+    text-align: center;
+    font-size: 1.1em;
+    display: flexbox;
+    align-content: center;
+
+    h2{
+            text-align: center;
+            font-weight: 700;
+            font-size: 2em;
+            }
+    img{
+        max-width: 50px;
+    }
+
+    p{
+        padding-bottom: 1em;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    iframe{
+        display: none;
+    }
+
+    //wieso funktioniert float bei div Element nicht?
+
+
+}
