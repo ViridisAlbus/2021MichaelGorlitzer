@@ -46,8 +46,6 @@ a {
 
 ul {
   list-style-type: circle;
-  margin: 0;
-  padding: 0;
 }
 
 section {
@@ -144,7 +142,7 @@ section.about p {
 
 section.contact {
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1em;
   display: flexbox;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -167,6 +165,10 @@ section.contact p {
 section.contact a {
   color: black;
   text-decoration: none;
+}
+
+section.contact .times {
+  font-weight: 700;
 }
 
 section.contact iframe {
