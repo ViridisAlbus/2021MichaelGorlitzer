@@ -93,7 +93,8 @@ section {
 
 .hero-img {
   width: 70%;
-  margin-top: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   border-radius: 50%;
   border: 5px solid var(--primary-color);
 }
