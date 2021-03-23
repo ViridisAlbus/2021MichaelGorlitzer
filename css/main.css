@@ -51,7 +51,7 @@ ul {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 3.5em 2em;
 }
 
 .hero {
@@ -162,7 +162,8 @@ section.contact img {
 }
 
 section.contact p {
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
+  margin-top: 0.5em;
 }
 
 section.contact a {
