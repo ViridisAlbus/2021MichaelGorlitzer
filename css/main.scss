@@ -79,7 +79,7 @@ section{
         font-size: 1.1em;
         letter-spacing: .06em;
         line-height: 1.4em;
-        margin-top: -.6em;
+        margin-top: -.6em
     }
 
     .primary-cta{
@@ -87,6 +87,7 @@ section{
         color: white;
         text-decoration: none;
         padding: .6em 1.3em;
+        margin-top: 0.5em;
         font-size: 1.2em;
         font-weight: 700;
         border-radius: 5em;
@@ -132,7 +133,6 @@ ul.leistungen{
 
 section.about{
     background: var(--primary-color);
-    
     text-align: center;
     font-size: 1.1em;
 
@@ -140,6 +140,7 @@ section.about{
         text-align: center;
         font-weight: 700;
         font-size: 2em;
+        margin-bottom: 0.5em; //ungenau
         }
     p{
         margin-top: 0%;
@@ -153,17 +154,21 @@ section.contact{
     align-content: center;
 
     h2{
-            text-align: center;
-            font-weight: 700;
-            font-size: 2em;
-            }
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+    }
     img{
         max-width: 50px;
     }
 
     p{
-        padding-bottom: 1.5em;
+        margin-bottom: 1.5em;
         margin-top: 0.5em;
+    }
+
+    .end-p{
+        margin-bottom: 0;
     }
 
     a{
