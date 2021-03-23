@@ -45,7 +45,9 @@ a {
 }
 
 ul {
-  list-style-type: circle;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -67,7 +69,7 @@ section {
 .left-col h1 {
   font-size: 2.3em;
   line-height: 1em;
-  margin-top: -0.4em;
+  margin-top: 0.3em;
   margin-bottom: 1em;
 }
 
@@ -92,8 +94,8 @@ section {
 .hero-img {
   width: 70%;
   margin-top: 1.5em;
-  border-radius: 100%;
-  border-color: var(--primary-color);
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
 }
 
 section.leistungen-section {
@@ -111,11 +113,12 @@ section.leistungen-section h2 {
 ul.leistungen {
   margin: 0;
   padding-left: 1em;
+  list-style-type: circle;
 }
 
 ul.leistungen li {
   font-size: 1.1em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   margin-left: 1em;
 }
 
@@ -173,5 +176,43 @@ section.contact .times {
 
 section.contact iframe {
   display: none;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: #20272E;
+  height: 100vh;
+  padding: 1em;
+}
+
+ul.primary-nav {
+  margin-top: 5em;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+li a:hover {
+  font-weight: 700;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
