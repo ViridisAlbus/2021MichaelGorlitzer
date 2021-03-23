@@ -17,19 +17,19 @@
 
             <img id="mobile-cta" class="mobile-menu" src="img/menu.svg" alt="Menü">
 
-            <nav>
+            <nav id="close">
                 <img id="mobile-exit" class="mobile-menu-exit" src="img/exit.svg" alt="Menü schließen">
 
                 <ul class="primary-nav">
                    <li class="current"><a href="#">Home</a></li>
-                   <li><a href="#">Leistungen</a></li>
+                   <li><a  href="#leistungen-id">Leistungen</a></li>
                 <!--  <li><a href="#">Schwerpunkte</a></li>-->
                  <!--  <li><a href="#">Ordination</a></li>-->
-                   <li><a href="#">Zu meiner Person</a></li>
+                   <li><a href="#zmp-id">Zu meiner Person</a></li>
                 </ul>
 
                 <ul class="secondary-nav">
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#contact-id">Kontakt</a></li>
                     <li class="termin-cta"><a href="https://www.gesundheitszentrum-althietzing.at/kontakt/">Ordination</a></li>
                  </ul>
             </nav>
@@ -56,8 +56,9 @@
         </div>
     </section>
 
+    <div id="leistungen-id"></div>
     <section class="leistungen-section">
-        <div class="container">
+        <div class="container" >
             <h2>Leistungen</h2>
             <ul class="leistungen">
                 <li>Beratung zur Vorbeugung von Herz- und Gefäßkrankheiten</li>
@@ -71,7 +72,7 @@
                      
         </div>
     </section>
-
+    <div id="zmp-id"></div>
     <section class="about">
         <div class="container">
             <h2>Zu meiner Person</h2>
@@ -83,7 +84,7 @@
     </section>
 
     <section class="contact">
-        <div class="container">
+        <div class="container" id="contact-id">
 
             <img src="img/clock.png" class="clock-icon" alt="Uhr">
             <p class="times">Montag: 16:30 bis 19:00 Uhr </br> (nach telefonischer Voranmeldung!)</p>
@@ -102,9 +103,10 @@
     </section>
 
     <script>
-        const mobileBtn = document.getElementById("mobile-cta")
+        const mobileBtn = document.getElementById('mobile-cta')
             nav = document.querySelector('nav')
-            mobileBtnExit = document.getElementById('mobile-exit');
+            mobileBtnExit = document.getElementById('mobile-exit')
+            mobileBtnClose = document.getElementById('close');
 
             mobileBtn.addEventListener('click', () => {
                 nav.classList.add('menu-btn')
@@ -113,6 +115,15 @@
             mobileBtnExit.addEventListener('click', () => {
                 nav.classList.remove('menu-btn')
             })
+
+            mobileBtnClose.addEventListener('click', () => {
+                nav.classList.remove('menu-btn')
+            })
+
+
+
+
+
     </script>
 
 </body>
