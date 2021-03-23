@@ -93,7 +93,7 @@ section {
 }
 
 .hero-img {
-  width: 70%;
+  max-width: 20em;
   margin-top: 2em;
   margin-bottom: 2em;
   border-radius: 50%;
@@ -115,6 +115,10 @@ section.leistungen-section h2 {
 ul.leistungen {
   padding-left: 1em;
   list-style-type: circle;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (mimax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, mimax(19rem, 1fr));
 }
 
 ul.leistungen li {
@@ -220,5 +224,59 @@ li a:hover {
   float: right;
   margin: .5em;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px auto;
+        grid-template-columns: 200px auto;
+    place-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 0.5em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: 700;
+  }
+  .navbar nav li.termin-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: 700;
+    border-radius: 5em;
+    margin-top: -0.2em;
+    margin-left: 0.4em;
+  }
+  .navbar nav li.termin-cta a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
 }
 /*# sourceMappingURL=main.css.map */
