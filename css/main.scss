@@ -106,18 +106,15 @@ section.leistungen-section{
     background: #20272E;
     color: white;
     padding: 3em 2em;
-    
 
     h2{
     text-align: center;
     font-weight: 700;
     font-size: 2em;
-    
     }
 }
 
 ul.leistungen{
-    margin: 0;
     padding-left: 1em;
     list-style-type: circle;
     //display: grid; evtl später anwenden
@@ -135,7 +132,7 @@ ul.leistungen{
 
 section.about{
     background: var(--primary-color);
-    padding: 3em 2em;
+    
     text-align: center;
     font-size: 1.1em;
 

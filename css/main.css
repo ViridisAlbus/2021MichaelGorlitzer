@@ -112,7 +112,6 @@ section.leistungen-section h2 {
 }
 
 ul.leistungen {
-  margin: 0;
   padding-left: 1em;
   list-style-type: circle;
 }
@@ -129,7 +128,6 @@ ul.leistungen li {
 
 section.about {
   background: var(--primary-color);
-  padding: 3em 2em;
   text-align: center;
   font-size: 1.1em;
 }
