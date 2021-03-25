@@ -96,11 +96,11 @@ section{
 }
 
 .hero-img{
-    max-width: 20em;
+    width: 20em;
     margin-top: 2em;
     margin-bottom: 2em;
     border-radius: 50%;//für rundes bild quadrat
-    border: 5px solid var(--primary-color);//Rahmen rund herum
+    //border: 5px solid var(--primary-color);//Rahmen rund herum
 }
 
 section.leistungen-section{
@@ -116,10 +116,11 @@ section.leistungen-section{
 }
 
 ul.leistungen{
-    padding-left: 1em;
+    margin: 0;
+    padding-left: .1em;
     list-style-type: circle;
     display: grid;
-    grid-template-columns: repeat(auto-fit, mimax(19rem, 1fr));
+    //grid-template-columns: repeat(auto-fit, mimax(19rem, 1fr)); funktioniert nicht
 
     li{
         font-size: 1.1em;
@@ -241,7 +242,7 @@ li{
 
     .navbar .container{
         display: grid; //??? 
-        grid-template-columns: 200px auto;
+        grid-template-columns: 220px auto;
         place-content: unset;
     }
 
@@ -289,6 +290,48 @@ li{
 
         }
 
+    }
+
+    ul.leistungen{ //Notlösung statt grid template
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        list-style-type: none;
+    }
+
+}
+
+
+@media only screen and (min-width: 1080px){
+    .container{
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    section{
+        padding: 10em 4em;
+    }
+
+    .hero .container{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col{
+            margin: 3em 3em 0 5em;
+            
+            h1{
+            font-size: 3em;
+            width: 90%;
+            }
+        }
+    }
+
+    .hero-img{
+        width: 40%;
+        margin-right: 8em;
+        margin-top: -1em;
+        
     }
 
 }
