@@ -70,14 +70,13 @@ section {
   font-size: 2.3em;
   line-height: 1em;
   margin-top: 0.3em;
-  margin-bottom: 1em;
+  margin-bottom: 0.3em;
 }
 
 .left-col h2 {
   font-size: 1.1em;
   letter-spacing: .06em;
   line-height: 1.5em;
-  margin-top: -.6em;
 }
 
 .left-col .primary-cta {
@@ -312,6 +311,45 @@ li a:hover {
     width: 40%;
     margin-right: 8em;
     margin-top: -1em;
+  }
+  ul.leistungen {
+    text-align: left;
+    display: block;
+    margin-left: 5em;
+  }
+  ul.leistungen li {
+    font-size: 1.4em;
+  }
+  .leistungen-section {
+    position: relative;
+  }
+  .leistungen-section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -4.5em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .leistungen-section::before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .leistungen-section:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("../img/dots.svg") no-repeat;
+    left: 4.5em;
+    top: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
