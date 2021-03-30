@@ -285,7 +285,7 @@ li a:hover {
 
 @media only screen and (min-width: 1080px) {
   .container {
-    width: 1080px;
+    width: 1009px;
     margin: 0 auto;
   }
   section {
