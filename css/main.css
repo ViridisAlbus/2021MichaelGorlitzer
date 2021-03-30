@@ -308,9 +308,10 @@ li a:hover {
     width: 90%;
   }
   .hero-img {
-    width: 40%;
+    width: 35%;
     margin-right: 8em;
-    margin-top: -1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
   ul.leistungen {
     text-align: left;
