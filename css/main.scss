@@ -133,6 +133,7 @@ ul.leistungen{
 }
 
 section.about{
+    padding: 3em 2em;
     background: var(--primary-color);
     text-align: center;
     font-size: 1.1em;
@@ -341,6 +342,7 @@ li{
 
         li{
             font-size: 1.4em;
+            list-style-type: circle;
         }
         
     }
