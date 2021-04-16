@@ -234,7 +234,7 @@ li{
 
 //Ab 768px:
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 872px) { //Verstehe nicht wieso.. Bei 653px führt es das Ganze schon aus
 
     .mobile-menu, .mobile-menu-exit {
         display: none;
@@ -244,7 +244,7 @@ li{
         display: grid; //??? 
         grid-template-columns: 220px auto;
         place-content: unset;
-    }
+    } 
 
     .navbar nav{
         display: flex;
@@ -257,7 +257,6 @@ li{
 
         ul{
             display: flex;
-        
         }
 
         a{
@@ -298,7 +297,6 @@ li{
         text-align: center;
         list-style-type: none;
     }
-
 }
 
 
