@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap');
 
 :root{
-    --primary-color: #a17f1a;
+    --primary-color: #a6917c;
 }
 
 body{
@@ -23,7 +23,7 @@ body{
         color: black;
 
         span{
-            color: var(--primary-color);
+            color: #87725C;
         }
     }
 
@@ -46,13 +46,13 @@ a {
 }
 
 ul{
-    list-style-type: circle;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
+     margin: 0; //Für mobile nav damit gleicher absatnd zw prim und sec nav ist!
+     padding: 0;
 }
 
 section{
-    padding: 5em 2em;
+    padding: 3.5em 2em;
 }
 
 .hero{
@@ -69,16 +69,16 @@ section{
     }
 
     h1{
-        font-size: 2.8em;
-        line-height: .5em;
-        margin-top: .2em;
+        font-size: 2.3em;
+        line-height: 1em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
     }
     
     h2{
-        font-size: 1.3em;
+        font-size: 1.1em;
         letter-spacing: .06em;
-        line-height: 1.3em;
-        margin-top: -.6em;
+        line-height: 1.5em;
     }
 
     .primary-cta{
@@ -86,6 +86,7 @@ section{
         color: white;
         text-decoration: none;
         padding: .6em 1.3em;
+        margin-top: 0.5em;
         font-size: 1.2em;
         font-weight: 700;
         border-radius: 5em;
@@ -94,10 +95,11 @@ section{
 }
 
 .hero-img{
-    width: 70%;
-    margin-top: 1.5em;
-    border-radius: 100%;//für rundes bild quadrat
-    border-color: var(--primary-color); //Rahmen rund herum
+    width: 20em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 50%;//für rundes bild quadrat
+    //border: 5px solid var(--primary-color);//Rahmen rund herum
 }
 
 section.leistungen-section{
@@ -109,18 +111,19 @@ section.leistungen-section{
     text-align: center;
     font-weight: 700;
     font-size: 2em;
-    
     }
 }
 
 ul.leistungen{
     margin: 0;
-    padding-left: 1em;
-    //display: grid; evtl später anwenden
+    padding-left: .1em;
+    list-style-type: circle;
+    display: grid;
+    //grid-template-columns: repeat(auto-fit, mimax(19rem, 1fr)); funktioniert nicht
 
     li{
         font-size: 1.1em;
-        margin-bottom: 1em;
+        margin-bottom: 1.5em;
         margin-left: 1em;
     }
 }
@@ -130,8 +133,8 @@ ul.leistungen{
 }
 
 section.about{
-    background: var(--primary-color);
     padding: 3em 2em;
+    background: var(--primary-color);
     text-align: center;
     font-size: 1.1em;
 
@@ -139,6 +142,7 @@ section.about{
         text-align: center;
         font-weight: 700;
         font-size: 2em;
+        margin-bottom: 0.5em; //ungenau
         }
     p{
         margin-top: 0%;
@@ -147,21 +151,26 @@ section.about{
 
 section.contact{
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
     display: flexbox;
     align-content: center;
 
     h2{
-            text-align: center;
-            font-weight: 700;
-            font-size: 2em;
-            }
+        text-align: center;
+        font-weight: 700;
+        font-size: 2em;
+    }
     img{
         max-width: 50px;
     }
 
     p{
-        padding-bottom: 1em;
+        margin-bottom: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    .end-p{
+        margin-bottom: 0;
     }
 
     a{
@@ -169,11 +178,209 @@ section.contact{
         text-decoration: none;
     }
 
+    .times{
+        font-weight: 700;
+    }
+
     iframe{
         display: none;
     }
 
-    //wieso funktioniert float bei div Element nicht?
+}
+
+nav.menu-btn{ //???
+    display: block;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+
+}
+
+ul.primary-nav{
+    margin-top: 5em;
+}
+
+li{
+
+  a{ 
+    color: white;
+    text-decoration: none;
+    display: block; //um auf a Elemente padding und margin zu setzten
+    padding: .5em;
+    font-size: 1.3em;
+    text-align: right;
+
+    &:hover{
+        font-weight: 700;
+        }
+
+    }
+}
+
+.mobile-menu-exit{
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
 
 
+//Ab 768px:
+
+@media only screen and (min-width: 872px) { //Verstehe nicht wieso.. Bei 653px führt es das Ganze schon aus
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container{
+        display: grid; //??? 
+        grid-template-columns: 220px auto;
+        place-content: unset;
+    } 
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul{
+            display: flex;
+        }
+
+        a{
+            color: black;
+            font-size: 1em;
+            padding: .1em 0.5em;
+
+        }
+
+        ul.primary-nav{
+            margin: 0;
+        }
+
+        li.current a{
+            font-weight: 700;
+        }
+
+        li.termin-cta a{
+            color: var(--primary-color);
+            border: 3px solid var(--primary-color);
+            font-weight: 700;
+            border-radius: 5em;
+            margin-top: -0.2em;
+            margin-left: 0.4em;
+
+           &:hover{
+               background: var(--primary-color);
+               color: white;
+           }
+
+        }
+
+    }
+
+    ul.leistungen{ //Notlösung statt grid template
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        list-style-type: none;
+    }
+}
+
+
+@media only screen and (min-width: 1080px){
+    .container{
+        width: 1009px;
+        margin: 0 auto;
+    }
+
+    section{
+        padding: 10em 4em;
+    }
+
+    .hero .container{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .left-col{
+            margin: 3em 3em 0 5em;
+            
+            h1{
+            font-size: 3em;
+            width: 90%;
+            }
+        }
+    }
+
+    .hero-img{
+        width: 35%;
+        margin-right: 8em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        
+    }
+
+    ul.leistungen{
+        text-align: left;
+        display: block;
+        margin-left: 5em;
+
+        li{
+            font-size: 1.4em;
+            list-style-type: circle;
+        }
+        
+    }
+
+    .leistungen-section{
+        position: relative;
+
+        img{
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 350px;
+            bottom: -4.5em;
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 1440px){
+    .leistungen-section{
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 10%;
+            height: 20em;
+            background: var(--primary-color);
+            left: 0;
+            top: -4em;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 20em;
+            background: url('../img/dots.svg') no-repeat;
+            left: 4.5em;
+            top: 2em;
+        }
+    }
 }
