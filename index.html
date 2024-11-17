@@ -4,124 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OA Priv. Doz. Dr. Michael Gorlitzer – Facharzt für Herz- und Gefäßchirurgie, spezialisiert auf Prävention, Diagnose und Behandlung von Herz- und Gefäßerkrankungen.">
     <title>Dr. Michael Gorlitzer</title>
-	<link rel="icon" href="img/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <div class="navbar">
+    <!-- Navigation -->
+    <header class="navbar" role="banner">
         <div class="container">
-            <a class="logo" href="#">
+            <a class="logo" href="#" aria-label="Startseite">
                 Dr. Michael <span>Gorlitzer</span>
             </a>
 
-            <img id="mobile-cta" class="mobile-menu" src="img/menu.svg" alt="Menü">
+            <button id="mobile-cta" class="mobile-menu" aria-label="Menü öffnen">
+                <img src="img/menu.svg" alt="Menü öffnen">
+            </button>
 
-            <nav id="mobile-close">
-                <img id="mobile-exit" class="mobile-menu-exit" src="img/exit.svg" alt="Menü schließen">
-
+            <nav id="mobile-close" role="navigation" aria-label="Hauptnavigation">
+                <button id="mobile-exit" class="mobile-menu-exit" aria-label="Menü schließen">
+                    <img src="img/exit.svg" alt="Menü schließen">
+                </button>
                 <ul class="primary-nav">
-                   <li class="current"><a href="#">Home</a></li>
-                   <li><a  href="#leistungen-id">Leistungen</a></li>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#leistungen-id">Leistungen</a></li>
                     <li><a href="#">Schwerpunkte</a></li>
                     <li><a href="#zmp-id">Zu meiner Person</a></li>
-                 <!--<li><a href="#">Ordination</a></li>-->
                 </ul>
-
                 <ul class="secondary-nav">
                     <li><a href="#contact-id">Kontakt</a></li>
                     <li class="termin-cta"><a href="https://www.gesundheitszentrum-althietzing.at/" target="_blank">Ordination</a></li>
-                 </ul>
+                </ul>
             </nav>
         </div>
-    </div>
-    
-    <section class="hero">
-        <div class="container">
-            <div class="left-col">
-                <p class="subhead">OA Priv. Doz. Dr.</p>
-                <h1>Michael Gorlitzer</h1>
-                <h2>Facharzt für Herz- &amp; Gefäßchirurgie </br> <!--2x br!!!-->
-                    MBA für Health Care Management
-                </h2>
+    </header>
 
-                <div class="nav-cta">
-                <a href="https://www.gesundheitszentrum-althietzing.at/kontakt/" target="_blank" class="primary-cta">Termin vereinbaren</a>
+    <main>
+        <!-- Hero-Bereich -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">OA Priv. Doz. Dr.</p>
+                    <h1 id="hero-heading">Michael Gorlitzer</h1>
+                    <h2>Facharzt für Herz- & Gefäßchirurgie</h2>
+                    <p>MBA für Health Care Management</p>
+                    <div class="nav-cta">
+                        <a href="https://www.gesundheitszentrum-althietzing.at/kontakt/" target="_blank" class="primary-cta">Termin vereinbaren</a>
+                    </div>
                 </div>
-                <!--evtl.- Ordinationszeiten und Telnr mit Icon hinzufügen-->
+                <img src="img/gorlitzer_quadrat.jpg" class="hero-img" alt="Dr. Michael Gorlitzer, Facharzt für Herz- und Gefäßchirurgie">
             </div>
+        </section>
 
-            <img src="img/gorlitzer_quadrat.jpg" class="hero-img" alt="Michael Gorlitzer">
+        <!-- Leistungen -->
+        <section id="leistungen-id" class="leistungen-section" aria-labelledby="leistungen-heading">
+            <div class="container">
+                <h2 id="leistungen-heading">Leistungen</h2>
+                <ul class="leistungen">
+                    <li>Beratung zur Vorbeugung von Herz- und Gefäßkrankheiten</li>
+                    <li>Diagnose von Herz- und Gefäßkrankheiten</li>
+                    <li>Planung und Durchführung der operativen Behandlung von Herz- und Gefäßerkrankungen</li>
+                    <li>Behandlung und Nachsorge von Krampfadern und Venenerkrankungen</li>
+                    <li>Betreuung nach Operationen von Herz- und Gefäßkrankheiten, Nachbehandlung und Rehabilitation</li>
+                </ul>
+                <img src="img/bsp.jpeg" alt="Illustration einer Herzoperation">
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- Zu meiner Person -->
+        <section id="zmp-id" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">Zu meiner Person</h2>
+                <p>Oberarzt am Herzzentrum Krankenhaus Nord<br>Zentrum für Herz- und Gefäßchirurgie</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan elit a risus pharetra facilisis. Nulla ac dolor vitae sapien volutpat dignissim.</p>
+            </div>
+        </section>
 
-    <div id="leistungen-id"></div>
-    <section class="leistungen-section">
-        <div class="container" >
-            <h2>Leistungen</h2>
-            <ul class="leistungen">
-                <li>Beratung zur Vorbeugung von Herz- und Gefäßkrankheiten</li>
-                <li> Diagnose von Herz- und Gefäßkrankheiten</li>
-                <li>Planung und Durchführung der operativen Behandlung von Herz- und Gefäßerkrankungen</li>
-                <li>Behandlung und Nachsorge von Krampfadern und Venenerkrankungen</li>
-                <li>Betreuung nach Operationen von Herz- und Gefäßkrankheiten, Nachbehandlung und Rehabilitation</li>
-            </ul>
+        <!-- Kontakt -->
+        <section id="contact-id" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Kontakt</h2>
+                <div>
+                    <img src="img/clock.png" class="clock-icon" alt="Uhrsymbol">
+                    <p>Montag: 16:30 bis 19:00 Uhr (nach telefonischer Voranmeldung!)</p>
+                </div>
+                <div>
+                    <a href="https://goo.gl/maps/o937G1wgLHEsJrNg6" target="_blank">
+                        <img src="img/location.png" alt="Standortsymbol">
+                        <p>Kupelwiesergasse 15, 1130 Wien</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="tel:018779444">
+                        <img src="img/phone.png" class="phone-icon" alt="Telefonsymbol">
+                        <p>01 877 94 44</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:gesundheitszentrum.althietzing@aon.at">
+                        <img src="img/mail.png" class="mail-icon" alt="E-Mailsymbol">
+                        <p>gesundheitszentrum.althietzing@aon.at</p>
+                    </a>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Google Maps"></iframe>
+            </div>
+        </section>
+    </main>
 
-            <img src="img/bsp.jpeg" alt="Operation">
-                     
-        </div>
-    </section>
-    <div id="zmp-id"></div>
-    <section class="about">
-        <div class="container">
-            <h2>Zu meiner Person</h2>
-            <p> Oberarzt am Herzzentrum Krankenhaus Nord </br>
-                Zentrum für Herz- und Gefäßchirurgie
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan elit a risus pharetra facilisis. Nulla ac dolor vitae sapien volutpat dignissim. Maecenas et orci turpis. Nulla rutrum urna ligula, vehicula scelerisque nisl viverra ac. Aenean in nulla lorem. Duis sed ipsum at nisl placerat eleifend quis vel lorem. Vivamus non dictum mi. Suspendisse pharetra eu nibh id efficitur.
-                Nam at purus nec magna tristique viverra et gravida justo. Suspendisse dictum dui nec ex placerat tincidunt. Ut quis nulla diam. Phasellus blandit sodales velit in luctus. Donec cursus lacus viverra, scelerisque neque non, tristique quam. Quisque non dui non massa euismod accumsan. Aenean ultricies est massa, ac tempor enim imperdiet a.
-            </p>
-            
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="container" id="contact-id">
-
-            <img src="img/clock.png" class="clock-icon" alt="Uhr">
-            <p class="times">Montag: 16:30 bis 19:00 Uhr </br> (nach telefonischer Voranmeldung!)</p>
-
-            <a href="https://goo.gl/maps/o937G1wgLHEsJrNg6" target="_blank"><img src="img/location.png"  alt="Ort">
-            <p>Kupelwiesergasse 15, 1130 Wien</p></a>
-
-            <a href="tel:018779444"><img src="img/phone.png" class="phone-icon" alt="Telefon"></a>
-            <p>01 877 94 44</p></a>
-
-            <a href="mailto:gesundheitszentrum.althietzing@aon.at"><img src="img/mail.png" class="mail-icon" alt="Mail">
-            <p class="end-p">gesundheitszentrum.althietzing@aon.at</p></a>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.107211485855!2d16.287706315744035!3d48.18528577922721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da7e8dde5f589%3A0x1bee1a30b4a2597e!2sDoz.%20OA%20Dr.%20med.%20univ.%20Michael%20Gorlitzer%2C%20MBA!5e0!3m2!1sde!2sat!4v1615896200656!5m2!1sde!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
-
+    <!-- JavaScript -->
     <script>
-        const mobileBtn = document.getElementById('mobile-cta')
-            nav = document.querySelector('nav')
-            mobileBtnExit = document.getElementById('mobile-exit')
-            mobileBtnClose = document.getElementById('mobile-close');
+        document.getElementById('mobile-cta').addEventListener('click', () => {
+            document.querySelector('nav').classList.toggle('menu-btn');
+        });
 
-            mobileBtn.addEventListener('click', () => {
-                nav.classList.add('menu-btn')
-            })
-
-            mobileBtnExit.addEventListener('click', () => {
-                nav.classList.remove('menu-btn')
-            })
-
-            mobileBtnClose.addEventListener('click', () => {
-                nav.classList.remove('menu-btn')
-            })
+        document.getElementById('mobile-exit').addEventListener('click', () => {
+            document.querySelector('nav').classList.remove('menu-btn');
+        });
     </script>
-
 </body>
 </html>
